@@ -158,3 +158,17 @@
         display: none;
    }
 }
+
+.menuBodyMobileFeed {
+   display: flex;
+   position: absolute;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   bottom: 10px;
+   left: 9%;
+
+   img {
+       width: 45px;
+   }
+}

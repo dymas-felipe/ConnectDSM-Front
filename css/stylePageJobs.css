@@ -56,3 +56,11 @@
 .bodyInputTextVagas {
     border: solid;
 }
+
+@media (max-width: 650px) {
+    .mainJobs {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+}

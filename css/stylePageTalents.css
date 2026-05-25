@@ -1,5 +1,9 @@
 .iframePortfolio {
-    width: 95%;
-    height: 90vh;
+    width: 95vw;
 }
 
+iframe.iframePortfolio  {
+    display: flex;
+    height: 85vh;
+    margin: 0px auto;
+}

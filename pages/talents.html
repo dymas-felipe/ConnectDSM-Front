@@ -13,9 +13,13 @@
 
     <!-- Frameworks -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS do Slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <!-- Nav Fixo -->
-<nav class="nav-between">
+<nav class="nav-between bg-white">
 
     <!-- Icone reciclavel - Icone do Projeto -->
     <section class="flex justify-start items-center gap-3 pl-5">
@@ -56,27 +60,32 @@
     </section>
 </nav>
 <!-- Menu Inferior - Mobile -->
-<section class="flex md:hidden w-8 " id="menuMobile">
-    <div id="menuBodyMobile">
-        <a href="../pages/jobs.html">
-            <img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5 w-12">
-        </a>
-        <a href="../pages/network.html">
-            <img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5 w-12">
-        </a>
-        <a href="../pages/">
-            <img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 w-12">
-        </a>
+<section class="flex md:hidden menuMobile">
+    <div class="menuBodyMobileFeed">
+        <a href="../pages/talents.html"><img src="../assets/icon/award.svg" alt="" class="imgMenu p-5"></a>
+        <a href="../pages/network.html"><img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5"></a>
+        <a href="../pages/jobs.html"><img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5"></a>
+        <a href="../pages/search.html"><img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 "></a>
     </div>
 </section>
 
 <body class="bg-sky-50">
-    <main>
-        <div class="flex justify-center">
-            <iframe src="https://portfolio-dymas.vercel.app/" style="display: flex;" frameborder="0" class="iframePortfolio"></iframe>
-            <iframe src="https://is-lorca.github.io/meu-Portfolio/" style="display: none;" frameborder="0" class="iframePortfolio" ></iframe>
-        </div>
+    <main class="mainPortfolios">
+        <section class="bodyIframesPortfolio carouselPortfolio arrows">
+            <div class="centerMode arrows">
+                <iframe class="iframePortfolio" src="https://portfolio-dymas.vercel.app/" frameborder="0"></iframe>
+            </div>
+            <div>
+                <iframe src="https://is-lorca.github.io/meu-Portfolio/" frameborder="0"
+                    class="iframePortfolio"></iframe>
+            </div>
+        </section>
     </main>
+    <!-- jQuery (obrigatório) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/modules/carouselTalents.js"></script>
 </body>
 
 </html>
